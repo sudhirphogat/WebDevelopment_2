@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func RenderTemplate(w http.ResponseWriter, tmpl string) {
+func RenderTemp(w http.ResponseWriter, tmpl string) {
 	parseTemplate, err := template.ParseFiles("./templates/" + tmpl)
 	if err != nil {
 		fmt.Println("this is an error", err)
